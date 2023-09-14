@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHRUV CSS-2</title>
+    <style>
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+            border: 1px solid black;
+            border-style: double;
+        }
+
+        .Vertical a:hover {
+            background-color: orange;
+        }
+
+        .Horizontal a:hover {
+            background-color: grey;
+        }
+
+        .Vertical {
+            display: inline-block;
+            border: 1px black solid;
+            border-spacing: 20px;
+            list-style-type: none;
+            margin: 40px;
+            padding: 0;
+            background-color: lightblue;
+            width: 310px;
+        }
+
+        .Horizontal {
+            display: inline-flex;
+            list-style-type: none;
+            margin: 40px;
+            padding: 0;
+            background-color: rgb(216, 210, 210);
+            width: 267px; /* Set the same width as the vertical bar */
+        }
+
+        .main {
+            text-align: center;
+            color: red;
+        }
+
+        /* Add styles for the wrapper divs */
+        .nav-wrapper {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .Ver {
+            padding-left: 50px;
+        }
+
+        .Hor {
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="main">DHRUV 21BCE0865 CSS Task 2</h1><br>
+    <div class="nav-wrapper">
+        <h1 class="Ver">Vertical Navigation Bar</h1>
+        <ul class="Vertical">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+    </div>
+    <div class="nav-wrapper">
+        <h1 class="Hor">Horizontal Navigation Bar</h1>
+        <ul class="Horizontal">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+    </div>
+</body>
+</html>

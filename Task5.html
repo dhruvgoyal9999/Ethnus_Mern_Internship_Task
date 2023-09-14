@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        
+        table {
+            
+            width: 600px; /* Set a fixed width for the table */
+            margin: 0 auto; /* Center the table on the page */
+        }
+        
+        th, td {
+            border: 1px solid black; /* Add borders to table cells */
+            padding: 10px; /* Add padding for spacing */
+            
+        }
+        
+        th {
+            background-color: #f0f0f0; /* Add a background color to header cells */
+        }
+        
+        input, select, textarea {
+            width: 100%; /* Set input width to 100% to fill the table cell */
+        }
+        .Declaration{
+            width: 10%;
+        }
+        tr{
+            width: 600px;
+        }
+        /* Style for the "Log in to Ethnus website" link */
+        .login-link {
+            text-align: right; /* Align the link to the right */
+            font-size: 12px; /* Adjust font size */
+        }
+        #male{
+            width: 10%;
+        }
+        #female{
+            width: 10%;
+        }
+        /* Style for the smaller "Register" button */
+        input[type="submit"] {
+            width: auto; /* Set the button width to auto to adjust its size based on content */
+            padding: 5px 10px; /* Adjust padding for the button */
+            font-size: 14px; /* Adjust font size for the button text */
+        }
+
+        /* Style for the container div to center the button */
+        .button-container {
+            text-align: center;
+            margin-top: 20px; /* Adjust the margin as needed for vertical alignment */
+        }
+        .language{
+            display: inline-flex;
+        }
+        h2{
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>DHRUV 21BCE0865 HTML TASK 5</h2>
+    <h1>Registration Form</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td style="font-weight: bold;">First Name</td>
+                <td><input type="text" id="First Name" class="input"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Last Name</td>
+                <td><input type="text" id="Last Name" class="input"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Email</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Password</td>
+                <td><input type="password" id="Password" class="input"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Re-enter Password</td>
+                <td><input type="password" id="Re-enter Password" class="input"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;" rowspan="2">Gender</td>
+                <td class="gender">
+                    <input type="radio" id="male" name="gender"> 
+                    <label for="male">Male</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Age</td>
+                <td><input type="number" placeholder="Enter your age" id="Age" class="input"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Phone Number</td>
+                <td><input type="number" name="number" id="number"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Address</td>
+                <td><input type="text" placeholder="Address" id="Address" class="input"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">State</td>
+                <td><input type="text" name="state" id="state"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Country</td>
+                <td>
+                    <select name="Country" id="Country">
+                        <option value="">Choose your country</option>
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Languages known</td>
+                <td class="language" colspan="1">
+                    <input type="checkbox" name="English" id="English">
+                    <label for="English">English</label>
+                    <input type="checkbox" name="Kannada" id="Kannada">
+                    <label for="Kannada">Kannada</label>
+                    <input type="checkbox" name="Hindi" id="Hindi">
+                    <label for="Hindi">Hindi</label>
+                    <input type="checkbox" name="Telugu" id="Telugu">
+                    <label for="Telugu">Telugu</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" class="Declaration" name="Declaration" id="Declaration"> 
+                    Hereby I declare all the given details are true
+                </td>
+            </tr>            
+            <tr>
+                <td colspan="2" class="login-link">
+                    Log in to <a href="https://ethnus.com/" target="blank">Ethnus</a> website
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Container div to center the "Register" button -->
+    <div class="button-container">
+        <input type="submit" value="Register">
+    </div>
+</body>
+</html>
